@@ -1,0 +1,468 @@
+.fixed-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../../background1.png);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.dynamic-content {
+    width: 800px;
+    margin: 30px auto;
+
+    .section-block {
+        width: 100%;
+        padding: 16px;
+        border-radius: 4px;
+        background-color: #fff;
+        position: relative;
+        text-align: center;
+
+        .emo {
+            position: absolute;
+            top: 107px;
+            left: 24px;
+            cursor: pointer;
+        }
+
+        .showMyEmo {
+            position: absolute;
+            top: 133px;
+            left: 17px;
+            z-index: 20;
+        }
+
+        .select-music {
+            margin-top: 10px;
+
+            .selectSongName {
+                height: 40px;
+                line-height: 40px;
+                padding: 6px 8px;
+                border: 1px solid #dcdfe6;
+                border-radius: 4px;
+                font-size: 16px;
+                cursor: pointer;
+                text-align: center;
+
+                .music-ico {
+                    float: left;
+                }
+
+                .select-song {
+                    display: inline-block;
+                    width: 95%;
+
+                    &/deep/ .el-input {
+                        width: 724px;
+
+                        .el-input__inner {
+                            border: 0px solid #DCDFE6;
+                            margin-left: 8px;
+                            text-align: center;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .add-ico {
+                    float: right;
+                }
+            }
+        }
+
+        .select-img {
+            margin-top: 10px;
+        }
+
+        .submitDynamic {
+            margin-top: 10px;
+        }
+    }
+
+    .main-dynamic-content {
+        position: relative;
+        margin-bottom: 40px;
+        .list-complete-enter,
+        .list-complete-leave-to
+
+        /* .list-complete-leave-active for below version 2.1.8 */
+            {
+            opacity: 0;
+            transform: translateY(-60px);
+        }
+
+        .list-complete-leave-active {
+            position: absolute;
+        }
+
+        .dynamic-card {
+            width: 100%;
+            margin-top: 15px;
+            border-radius: 4px;
+            background: #fff;
+            padding: 30px 16px;
+            transition: all 1s;
+
+            .mface {
+                display: inline-block;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                cursor: pointer;
+
+                img {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                }
+            }
+
+            .gcnt {
+                margin-left: 15px;
+                display: inline-block;
+                vertical-align: top;
+                width: 91%;
+
+                .pubAuthor {
+                    font-size: 14px;
+                    color: #E6A23C;
+
+                    span {
+                        margin-left: 8px;
+                        color: #7f667f;
+                    }
+                }
+
+                .pubDate {
+                    color: #b3a2b2;
+                    margin-top: 6px;
+                }
+
+                .pubContent {
+                    margin-top: 6px;
+                    word-break: break-all;
+                }
+
+                .pubSong {
+                    background-color: #f5f5f5;
+                    width: 100%;
+                    height: 55px;
+                    line-height: 52px;
+                    margin-top: 10px;
+
+                    .song-img {
+                        position: relative;
+                        display: inline-block;
+                        width: 40px;
+                        height: 40px;
+                        margin-left: 10px;
+                        cursor: pointer;
+
+                        .cover {
+                            position: absolute;
+                            left: 19px;
+                            top: 27px;
+
+                            .icon_play {
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                width: 16px;
+                                height: 16px;
+                                line-height: 16px;
+                                text-align: center;
+                                background: #fff;
+                                border-radius: 50%;
+                                transform: translate(-50%, -50%);
+
+                                .myfont {
+                                    font-size: 12px;
+                                    margin: 0px 3px;
+                                }
+                            }
+                        }
+
+                        img {
+                            width: 40px;
+                            height: 40px;
+                        }
+                    }
+
+                    .pubSongMsg {
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-left: 12px;
+
+                        .songName {
+                            height: 23px;
+                            line-height: 23px;
+                            color: #333;
+                        }
+
+                        .singer {
+                            height: 16px;
+                            line-height: 16px;
+                            color: #666;
+                        }
+                    }
+                }
+
+                .pubImg {
+                    margin-top: 15px;
+                    width: 100%;
+
+                    .el-image {
+                        margin-right: 32px;
+                        margin-bottom: 20px;
+
+                        &:nth-child(5) {
+                            margin-right: 0px;
+                        }
+                    }
+                }
+            }
+
+            .dynamic_text {
+                float: right;
+                margin-right: 5px;
+                cursor: pointer;
+
+                .weibo {
+                    margin-right: 15px;
+                    vertical-align: middle;
+
+                    &:hover {
+                        color: #ea5d5c;
+                    }
+                }
+            }
+
+            .comment-area {
+                margin-top: 50px;
+
+                .comminication {
+                    padding: 6px 11px;
+                    background: #fafafa;
+                    border: 1px solid #00a1d6;
+                    border-radius: 8px;
+                    line-height: 0;
+                    min-height: 35px;
+
+                    textarea {
+                        width: 100%;
+                        padding: 0;
+                        background: transparent;
+                        border: none;
+                        line-height: 24px;
+                        font-size: 14px;
+                        color: #333;
+                        -webkit-box-shadow: none;
+                        box-shadow: none;
+                        outline: none;
+                        resize: none;
+                        height: 62px;
+                        word-break: break-all;
+                    }
+                }
+
+                .pub-comment {
+                    margin-top: 10px;
+                    margin-left: 695px;
+                }
+
+                .main-comment {
+                    margin-top: 20px;
+                    padding-top: 25px;
+                    border-top: 1px solid #e5e9ef;
+                    width: 100%;
+
+                    .no-dynamicComm {
+                        text-align: center;
+                        color: #a9acb1;
+                        font-size: 14px;
+                    }
+
+                    .share-content {
+                        margin-bottom: 30px;
+                        padding-bottom: 20px;
+                        border-bottom: 1px solid #e5e9ef;
+
+                        &:last-of-type {
+                            border-bottom: none;
+                        }
+
+                        .main-message {
+                            .author-img {
+                                display: inline-block;
+                                width: 40px;
+                                height: 40px;
+                                border-radius: 50%;
+                                overflow: hidden;
+
+                                img {
+                                    width: 40px;
+                                    height: 40px;
+                                    cursor: pointer;
+                                }
+                            }
+
+                            .content {
+                                display: inline-block;
+                                width: 748px;
+                                vertical-align: top;
+                                margin-left: 12px;
+
+                                .top-content {
+                                    margin-bottom: 6px;
+
+                                    .name {
+                                        color: #E6A23C;
+                                    }
+
+                                    .commend {
+                                        word-break: break-all;
+                                    }
+                                }
+
+                                .bottom-content {
+                                    font-family: 'icomoon';
+                                    position: relative;
+
+                                    .date-time {
+                                        position: relative;
+                                        display: inline-block;
+                                        left: 0px;
+                                    }
+
+                                    .like-chat {
+                                        display: inline-block;
+                                        margin-left: 50px;
+                                        cursor: pointer;
+
+                                        span {
+                                            margin-left: 10px;
+                                            padding-left: 12px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .vice-message {
+                            width: 95%;
+                            margin-top: 24px;
+                            margin-left: 36px;
+
+                            .vice-share {
+                                margin-bottom: 25px;
+                            }
+
+                            .author-img {
+                                display: inline-block;
+                                width: 40px;
+                                height: 40px;
+                                border-radius: 50%;
+                                overflow: hidden;
+
+                                img {
+                                    width: 40px;
+                                    height: 40px;
+                                    cursor: pointer;
+                                }
+                            }
+
+                            .content {
+                                display: inline-block;
+                                width: 90%;
+                                vertical-align: top;
+                                margin-left: 12px;
+
+                                .top-content {
+                                    margin-bottom: 6px;
+
+                                    .name {
+                                        color: #E6A23C;
+                                    }
+
+                                    .commend {
+                                        word-break: break-all;
+                                    }
+                                }
+
+                                .bottom-content {
+                                    font-family: 'icomoon';
+                                    position: relative;
+
+                                    .date-time {
+                                        position: relative;
+                                        display: inline-block;
+                                        left: 0px;
+                                    }
+
+                                    .like-chat {
+                                        display: inline-block;
+                                        margin-left: 50px;
+                                        cursor: pointer;
+
+                                        span {
+                                            margin-left: 10px;
+                                            padding-left: 12px;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .vice-comm {
+                                margin-top: 25px;
+                            }
+
+                            .vice-pubComm {
+                                margin-left: 655px;
+                            }
+
+                            .other-vice-name {
+                                color: #00a1d6;
+                                cursor: pointer;
+                            }
+
+                            .vice-page {
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                }
+
+                .main-page {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .tipMessage {
+        width: 104%;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 6px;
+        background-color: #f0eb98;
+        text-align: center;
+        margin-top: 10px;
+        cursor: pointer;
+
+        .new-down {
+            vertical-align: middle;
+        }
+    }
+
+    .page {
+        margin: 0px;
+        margin-left: 30px;
+        margin-bottom: 85px;
+        text-align: center;
+    }
+}

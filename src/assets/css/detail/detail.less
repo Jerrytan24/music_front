@@ -1,0 +1,122 @@
+.bg-contain {
+    .contain-lyric {
+        width: 720px;
+        margin: 30px auto;
+        margin-bottom: 50px;
+
+        .share {
+            .share-title {
+                padding-bottom: 10px;
+
+                h2 {
+                    color: #272525;
+
+                    .switchRight {
+                        float: right;
+                    }
+                }
+            }
+
+            .share-content {
+                padding: 20px 0px;
+                border-top: 1px solid #303133;
+
+                .author-img {
+                    display: inline-block;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    overflow: hidden;
+
+                    img {
+                        width: 40px;
+                        height: 40px;
+                        cursor: pointer;
+                    }
+                }
+
+                .content {
+                    display: inline-block;
+                    width: 668px;
+                    vertical-align: top;
+                    margin-left: 12px;
+
+                    .top-content {
+                        margin-bottom: 6px;
+                        ;
+
+                        .name {
+                            color: #E6A23C;
+                        }
+
+                        .commend {
+                            word-break: break-all;
+                        }
+                    }
+
+                    .bottom-content {
+                        font-family: 'icomoon';
+                        position: relative;
+
+                        .date-time {
+                            position: relative;
+                            display: inline-block;
+                            left: 0px;
+                        }
+
+                        .like-chat {
+                            position: absolute;
+                            display: inline-block;
+                            right: 0px;
+
+                            span {
+                                cursor: pointer;
+                                margin-left: 10px;
+                                padding-left: 12px;
+                                border-left: 1px solid #303133;
+
+                                &:nth-of-type(1) {
+                                    border-left: 0px;
+                                }
+                            }
+
+                            .love {
+                                color: #ec4141;
+                            }
+
+                            /* 可以设置不同的进入和离开动画 */
+                            /* 设置持续时间和动画函数 */
+                            .slide-fade-enter-active {
+                                transition: all .1s ease;
+                            }
+
+                            .slide-fade-leave-active {
+                                transition: all .1s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+                            }
+
+                            .slide-fade-enter,
+                            .slide-fade-leave-to
+
+                            /* .slide-fade-leave-active for below version 2.1.8 */
+                                {
+                                transform: translateX(10px);
+                                opacity: 0;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .center {
+                text-align: center;
+                font-size: 15px;
+            }
+        }
+
+        .commentButton {
+            position: fixed;
+            right: 266px;
+            bottom: 62px;
+        }
+    }
+}

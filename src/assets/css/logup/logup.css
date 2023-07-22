@@ -1,0 +1,109 @@
+.logup-contain {
+  width: 478px;
+  margin: 100px auto;
+  border-radius: 5px;
+  padding: 40px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+}
+.logup-contain .el-form-item__content {
+  width: 340px;
+}
+.logup-contain .logup-sm {
+  display: block;
+  font-family: 'icomoon';
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+.logup-contain .slider {
+  background-color: #fff;
+  width: 278px;
+  height: 285px;
+  z-index: 999;
+  box-sizing: border-box;
+  padding: 9px;
+  border-radius: 6px;
+  box-shadow: 0 0 11px 0 #999999;
+}
+.logup-contain .slider .content {
+  width: 100%;
+  height: 159px;
+  position: relative;
+}
+.logup-contain .bg-img-div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: translate(0px, 0px);
+}
+.logup-contain .slider-img-div {
+  height: 100%;
+  position: absolute;
+  transform: translate(0px, 0px);
+}
+.logup-contain .bg-img-div img {
+  width: 100%;
+}
+.logup-contain .slider-img-div img {
+  height: 100%;
+}
+.logup-contain .slider .slider-move {
+  height: 60px;
+  width: 100%;
+  margin: 11px 0;
+  position: relative;
+}
+.logup-contain .slider .bottom {
+  height: 19px;
+  width: 100%;
+}
+.logup-contain .refresh-btn,
+.logup-contain .close-btn,
+.logup-contain .slider-move-track,
+.logup-contain .slider-move-btn {
+  background: url(https://static.geetest.com/static/ant/sprite.1.2.4.png) no-repeat;
+}
+.logup-contain .refresh-btn,
+.logup-contain .close-btn {
+  display: inline-block;
+}
+.logup-contain .slider-move .slider-move-track {
+  line-height: 38px;
+  font-size: 14px;
+  text-align: center;
+  white-space: nowrap;
+  color: #88949d;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.logup-contain .slider {
+  user-select: none;
+}
+.logup-contain .slider-move .slider-move-btn {
+  transform: translate(0px, 0px);
+  background-position: -5px 11.79625%;
+  position: absolute;
+  top: -12px;
+  left: 0;
+  width: 66px;
+  height: 66px;
+}
+.logup-contain .slider-move-btn:hover,
+.logup-contain .close-btn:hover,
+.logup-contain .refresh-btn:hover {
+  cursor: pointer;
+}
+.logup-contain .bottom .close-btn {
+  width: 20px;
+  height: 20px;
+  background-position: 0 44.86874%;
+}
+.logup-contain .bottom .refresh-btn {
+  width: 20px;
+  height: 20px;
+  background-position: 0 81.38425%;
+}
+.logup-contain .after {
+  color: #88949d;
+}

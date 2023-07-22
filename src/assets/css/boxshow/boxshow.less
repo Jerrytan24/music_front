@@ -1,0 +1,59 @@
+.box-contain {
+    position: relative;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
+    cursor: pointer;
+    .cover {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 224px;
+        width: 100%;
+        background: rgba(0, 0, 0, .3);
+        z-index: 3;
+        display: none;
+        .icon_play {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 66px;
+            height: 66px;
+            line-height: 68px;
+            text-align: center;
+            background: #fff;
+            border-radius: 50%;
+            transform: translate(-50%,-50%);
+            .myfont {
+                font-size:36px;
+            }
+        }
+    }
+    .scale-img {
+        width: 100%;
+        height: 224px;
+        overflow: hidden;
+        >img {
+            width: 100%;
+            height:224px;
+            transition: all 0.5s;
+        }
+    }
+    .review {
+        display: inline-block;
+        width: 91%;
+        font-size: 14px;
+        /* 因为这个段落没有 width属性 所有 padding不会撑开盒子的宽度 */
+        padding: 16px 10px;
+        overflow:hidden;//超出的隐藏
+        text-overflow:ellipsis;//显示省略符号来代表被修剪的文本。
+        white-space:nowrap;
+        text-align:center;
+    }
+    &:hover img{
+        transform:scale(1.2);
+    }
+    &:hover .cover {
+        display:block;
+    }
+
+}

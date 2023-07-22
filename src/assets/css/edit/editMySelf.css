@@ -1,0 +1,30 @@
+.top-edit {
+  background-color: #b3d8ff;
+  height: 105px;
+  margin-top: -15px;
+  position: relative;
+}
+.top-edit .avatar-uploader .el-upload {
+  position: absolute;
+  top: 50px;
+  left: 710px;
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  cursor: pointer;
+  overflow: hidden;
+}
+.top-edit .avatar-uploader .el-upload .avatar {
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+}
+.editContent {
+  margin: 60px auto;
+  width: 500px;
+  margin-top: 80px;
+}
+.editContent textarea {
+  height: 94px;
+  resize: none;
+}

@@ -1,0 +1,163 @@
+.songListDetail-contain {
+    width:1320px;
+    margin: 30px auto;
+    margin-bottom:90px;
+    margin-top: 55px;
+    position: relative;
+    .left-introduction {
+        margin-right: 96px;
+        width:296px;
+        display: inline-block;
+        .img_out {
+            position: relative;
+            margin-bottom: 30px;
+            font-size: 0;
+            img {
+                width:100%;
+                height:305px;
+            }
+        }
+        .intr {
+            font-size: 22px;
+            font-weight: 600;
+            height: 30px;
+            line-height: 30px;
+            margin-bottom:10px;
+        }
+        .intr-text {
+            width: 100%;
+            font-size: 14px;
+            color: #666;
+            line-height: 21px;
+            word-break:break-all;
+        }
+    }
+    .right-list {
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 6px;
+        width:928px;
+        .song-list-name {
+            word-break: break-all;
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 42px;
+        }
+        .song-list-tag {
+            line-height: 20px;
+            margin-top: 12px;
+            color: #296294;
+            font-size:16px;
+        }
+        .btns {
+            margin: 30px 0px;
+            .playAll {
+                width: 150px;
+                height: 40px;
+                background: #ffe12c;
+                align-items: center;
+                justify-content: center;
+                padding: 0 28px;
+                text-align: center;
+                border-radius: 22px;
+                border: none;
+                font-size: 16px;
+                color: #333;
+                cursor: pointer;
+                i {
+                    margin-right: 8px;
+                }
+            }
+        }
+        .song-list {
+            .list-head {
+                height: 46px;
+                line-height: 46px;
+                background: #fafafa;
+                color: #999;
+                .flex_c {
+                    display: flex;
+                    align-items: center;
+                    font-size: 14px;
+                    .head_num {
+                        width: 9.18%;
+                        text-align: center;
+                    }
+                    .head_name {
+                        width: 50%;
+                    }
+                    .head_artist {
+                        width: 30%;
+                    }
+                }
+            }
+            .album_list {
+                .song_item {
+                    display: flex;
+                    align-items: center;
+                    height: 70px;
+                    line-height: 22px;
+                    color: #666;
+                    font-size:14px;
+                    &:nth-of-type(even) {
+                        background:#fafafa;
+                    }
+                    &:hover {
+                        background:#f2f2f2;
+                        .operate {
+                            display: block;
+                        }
+                    }
+                    .serial_number {
+                        width: 9.18%;
+                        text-align: center;
+                        font-weight: 700;
+                        overflow:hidden;//超出的隐藏
+                        text-overflow:ellipsis;//显示省略符号来代表被修剪的文本。
+                        white-space:nowrap;
+                    }
+                    .song_title {
+                        width: 50%;
+                        overflow:hidden;//超出的隐藏
+                        text-overflow:ellipsis;//显示省略符号来代表被修剪的文本。
+                        white-space:nowrap;
+                    }
+                    .singer {
+                        width: 30%;
+                        overflow:hidden;//超出的隐藏
+                        text-overflow:ellipsis;//显示省略符号来代表被修剪的文本。
+                        white-space:nowrap;
+                    }
+                    .operate {
+                        width:auto;
+                        flex:1;
+                        display: none;
+                        .playIcon {
+                            margin-right: 27px;
+                            font-size:25px;
+                            vertical-align:middle;
+                            cursor:pointer;
+                        }
+                        .downLoadIcon {
+                            font-size:22px;
+                            vertical-align:middle;
+                            cursor:pointer;
+                        }
+                    }
+                }
+                .active {
+                    background:#dedbdb!important;
+                }
+            }
+        }
+        .sld_page {
+            text-align: center;
+            margin-top:20px;
+        }
+        .no-music {
+            text-align: center;
+            font-size: 25px;
+            margin-top: 30px;
+        }
+    }
+}

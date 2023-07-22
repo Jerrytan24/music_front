@@ -1,0 +1,104 @@
+.hot-songList,
+.hot-singerList,
+.top-list {
+  border-radius: 2px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.04);
+}
+.hot-songList > h1,
+.hot-singerList > h1,
+.top-list > h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #8cc4fd;
+}
+.hot-songList .title,
+.hot-singerList .title,
+.top-list .title {
+  color: #5b5c5a;
+}
+.hot-songList .songList > ul,
+.hot-singerList .songList > ul,
+.top-list .songList > ul,
+.hot-songList .singerList > ul,
+.hot-singerList .singerList > ul,
+.top-list .singerList > ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.hot-songList .songList > ul li,
+.hot-singerList .songList > ul li,
+.top-list .songList > ul li,
+.hot-songList .singerList > ul li,
+.hot-singerList .singerList > ul li,
+.top-list .singerList > ul li {
+  position: relative;
+  width: 240px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+.hot-songList .songList > ul li .hot,
+.hot-singerList .songList > ul li .hot,
+.top-list .songList > ul li .hot,
+.hot-songList .singerList > ul li .hot,
+.hot-singerList .singerList > ul li .hot,
+.top-list .singerList > ul li .hot {
+  position: absolute;
+  right: -4px;
+  z-index: 1;
+}
+.hot-songList .top,
+.hot-singerList .top,
+.top-list .top {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 24px;
+}
+.hot-songList .top li,
+.hot-singerList .top li,
+.top-list .top li {
+  display: inline-block;
+  width: 100%;
+  color: #5b5c5a;
+  font-size: 18px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.hot-songList .top li:hover,
+.hot-singerList .top li:hover,
+.top-list .top li:hover {
+  color: #8cc4fd;
+}
+.hot-songList .top span,
+.hot-singerList .top span,
+.top-list .top span {
+  margin-right: 6px;
+}
+.hot-songList .top h2,
+.hot-singerList .top h2,
+.top-list .top h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.hot-songList .top .recommend-list,
+.hot-singerList .top .recommend-list,
+.top-list .top .recommend-list {
+  flex: 1;
+  padding-right: 8px;
+}
+.hot-songList .top .new-list,
+.hot-singerList .top .new-list,
+.top-list .top .new-list {
+  flex: 1;
+  padding-right: 8px;
+}
+.hot-songList .top .hot-list,
+.hot-singerList .top .hot-list,
+.top-list .top .hot-list {
+  flex: 1;
+  padding-right: 8px;
+}
+.self-top {
+  margin-bottom: 82px;
+}

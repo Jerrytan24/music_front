@@ -1,0 +1,167 @@
+.audioBar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 10px rgba(0, 0, 0, 0.26);
+  height: 50px;
+  background-color: #fff;
+  z-index: 4;
+  font-family: 'icomoon';
+}
+.audioBar .prePlay {
+  display: inline-block;
+  line-height: 50px;
+  font-size: 25px;
+  vertical-align: top;
+}
+.audioBar .prePlay span {
+  margin-right: 18px;
+  cursor: pointer;
+}
+.audioBar .progress {
+  display: inline-block;
+  padding: 8px 0px;
+}
+.audioBar .progress img {
+  width: 35px;
+  height: 35px;
+  border: 0;
+  border-radius: 4px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.audioBar .progress .progress-bar {
+  display: inline-block;
+  width: 600px;
+  vertical-align: top;
+}
+.audioBar .progress .progress-bar .block .el-tooltip {
+  width: 9px;
+  height: 9px;
+}
+.audioBar .progress .progress-bar .block .el-slider__runway {
+  margin: 8px 0px 0px 5px;
+}
+.audioBar .time {
+  position: relative;
+  top: 12px;
+  left: 28px;
+}
+.audioBar .my-control {
+  display: inline-block;
+  font-size: 18px;
+  position: relative;
+  top: 15px;
+  /* 可以设置不同的进入和离开动画 */
+  /* 设置持续时间和动画函数 */
+}
+.audioBar .my-control .volume {
+  display: inline-block;
+  position: relative;
+  margin-left: 68px;
+}
+.audioBar .my-control .volume .volume-icon {
+  cursor: pointer;
+}
+.audioBar .my-control .volume .block {
+  position: absolute;
+  top: -56px;
+  left: -12px;
+  visibility: hidden;
+}
+.audioBar .my-control .volume .block .el-tooltip {
+  width: 6px;
+  height: 6px;
+}
+.audioBar .my-control .volume:hover .block {
+  visibility: visible;
+}
+.audioBar .my-control .my_song_list {
+  position: absolute;
+  width: 512px;
+  height: 460px;
+  bottom: 60px;
+  background: #fafafa;
+  padding: 25px 14px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.04);
+}
+.audioBar .my-control .my_song_list .list_top {
+  font-size: 14px;
+}
+.audioBar .my-control .my_song_list .list_top .list_text {
+  float: left;
+  font-weight: 700;
+}
+.audioBar .my-control .my_song_list .list_top .list_num {
+  vertical-align: top;
+  margin-left: 4px;
+}
+.audioBar .my-control .my_song_list .list_top .list_clear {
+  cursor: pointer;
+  margin-left: 314px;
+}
+.audioBar .my-control .my_song_list .my_list_body {
+  margin-top: 10px;
+}
+.audioBar .my-control .my_song_list .my_list_body .album_list {
+  height: 422px;
+}
+.audioBar .my-control .my_song_list .my_list_body .album_list .song_item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  height: 40px;
+  line-height: 22px;
+  color: #666;
+  font-size: 14px;
+  cursor: pointer;
+}
+.audioBar .my-control .my_song_list .my_list_body .album_list .song_item:hover {
+  border-radius: 4px;
+  background: #f2f2f2;
+}
+.audioBar .my-control .my_song_list .my_list_body .album_list .song_item .serial_number {
+  width: 10%;
+  font-weight: 700;
+  margin-left: 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.audioBar .my-control .my_song_list .my_list_body .album_list .song_item .song_title {
+  width: 50%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.audioBar .my-control .my_song_list .my_list_body .album_list .song_item .singer {
+  width: 30%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.audioBar .my-control .my_song_list .my_list_body .album_list .song_item .delete_song {
+  width: auto;
+  margin-right: 20px;
+}
+.audioBar .my-control .my_song_list .my_list_body .album_list .active {
+  color: #66b1ff;
+}
+.audioBar .my-control .like {
+  color: #ec4141;
+}
+.audioBar .my-control .slide-fade-enter-active {
+  transition: all 0.1s ease;
+}
+.audioBar .my-control .slide-fade-leave-active {
+  transition: all 0.1s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.audioBar .my-control .slide-fade-enter,
+.audioBar .my-control .slide-fade-leave-to {
+  transform: translateX(10px);
+  opacity: 0;
+}
+.audioBar .my-control > span {
+  margin-left: 68px;
+  cursor: pointer;
+}

@@ -1,0 +1,60 @@
+.topic {
+    margin-top:-20px;
+    height:160px;
+    background-color: #DBECFC;
+    position: relative;
+    .sign {
+        text-align:center;
+        padding-top:50px;
+        .sign-title {
+            font-size:18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .sign-body {
+            font-size:15px;
+        }
+        img {
+            position: absolute;
+            width:100px;
+            height:100px;
+            border-radius: 50%;
+            bottom: -52px;
+            left: 271px;
+            z-index: 1;
+            cursor: pointer;
+        }
+    }
+}
+.layout-favor {
+    display: flex;
+    position: relative;
+    .content-left {
+        position: relative;
+        flex: 1;
+        text-align: center;
+        margin-left: -8px;
+        line-height:38px;
+        top:94px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .content-right {
+        position: relative;
+        flex: 2;
+        top:82px;
+        .el-table::before {
+            height: 0px;;
+        }
+        .el-table__cell {
+            cursor: pointer;
+        }
+        .el-table-column--selection {
+            text-align: center;
+        }
+        .page {
+            margin-top:25px;
+            margin-left: -10px;
+        }
+    }
+}

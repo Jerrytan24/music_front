@@ -1,0 +1,81 @@
+.main-singer-content {
+    width:1320px;
+    margin: 30px auto;
+    margin-bottom:90px;
+    position: relative;
+    .tag_kind {
+        margin-left: -15px;
+        margin-bottom: 30px;
+        li {
+            display: inline-block;
+            padding: 7px 14px;
+            font-size: 16px;
+            text-align: center;
+            border-radius: 24px;
+            margin-right: 6px;
+            cursor: pointer;
+            transition: all 0.4s;
+        }
+        .active {
+            background: #ffe443;
+            font-weight: 700;
+        }
+    }
+    .singer_body {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+        gap:40px;
+        .artist_item {
+            width: 180px;
+            height:180px;
+            margin-bottom: 40px;
+            .artist {
+                text-align:center;
+                .pic_out {
+                    position: relative;
+                    width: 180px;
+                    height:180px;
+                    overflow: hidden;
+                    border-radius: 50%;
+                    font-size: 0;
+                    cursor: pointer;
+                    img {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .name {
+                    position: relative;
+                    height: 22px;
+                    font-size: 16px;
+                    line-height: 22px;
+                    font-weight: 400;
+                    margin-top: 17px;
+                    justify-content: center;
+                    padding: 0 5px;
+                    .text {
+                        display:inline-block;
+                        width: 100%;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        white-space: nowrap;
+                    }
+                }
+                .num {
+                    margin-top: 6px;
+                    font-size: 12px;
+                    color: #999;
+                }
+            }
+        }
+    }
+    .page {
+        text-align: center;
+        margin: 0 auto;
+        margin-top:50px;
+    }
+}

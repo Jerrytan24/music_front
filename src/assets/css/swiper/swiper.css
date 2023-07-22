@@ -1,0 +1,22 @@
+.swiper-contain {
+  position: relative;
+  height: 320px;
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: #333333;
+}
+.swiper-contain img {
+  width: 916px;
+  height: 320px;
+  cursor: pointer;
+}
+.swiper-contain .mask_bg {
+  position: absolute;
+  left: 0px;
+  top: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(233, 235, 230);
+  filter: blur(145px);
+}

@@ -1,0 +1,93 @@
+.bg-contain .contain-lyric {
+  width: 720px;
+  margin: 30px auto;
+  margin-bottom: 50px;
+}
+.bg-contain .contain-lyric .share .share-title {
+  padding-bottom: 10px;
+}
+.bg-contain .contain-lyric .share .share-title h2 {
+  color: #272525;
+}
+.bg-contain .contain-lyric .share .share-title h2 .switchRight {
+  float: right;
+}
+.bg-contain .contain-lyric .share .share-content {
+  padding: 20px 0px;
+  border-top: 1px solid #303133;
+}
+.bg-contain .contain-lyric .share .share-content .author-img {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.bg-contain .contain-lyric .share .share-content .author-img img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.bg-contain .contain-lyric .share .share-content .content {
+  display: inline-block;
+  width: 668px;
+  vertical-align: top;
+  margin-left: 12px;
+}
+.bg-contain .contain-lyric .share .share-content .content .top-content {
+  margin-bottom: 6px;
+}
+.bg-contain .contain-lyric .share .share-content .content .top-content .name {
+  color: #E6A23C;
+}
+.bg-contain .contain-lyric .share .share-content .content .top-content .commend {
+  word-break: break-all;
+}
+.bg-contain .contain-lyric .share .share-content .content .bottom-content {
+  font-family: 'icomoon';
+  position: relative;
+}
+.bg-contain .contain-lyric .share .share-content .content .bottom-content .date-time {
+  position: relative;
+  display: inline-block;
+  left: 0px;
+}
+.bg-contain .contain-lyric .share .share-content .content .bottom-content .like-chat {
+  position: absolute;
+  display: inline-block;
+  right: 0px;
+  /* 可以设置不同的进入和离开动画 */
+  /* 设置持续时间和动画函数 */
+}
+.bg-contain .contain-lyric .share .share-content .content .bottom-content .like-chat span {
+  cursor: pointer;
+  margin-left: 10px;
+  padding-left: 12px;
+  border-left: 1px solid #303133;
+}
+.bg-contain .contain-lyric .share .share-content .content .bottom-content .like-chat span:nth-of-type(1) {
+  border-left: 0px;
+}
+.bg-contain .contain-lyric .share .share-content .content .bottom-content .like-chat .love {
+  color: #ec4141;
+}
+.bg-contain .contain-lyric .share .share-content .content .bottom-content .like-chat .slide-fade-enter-active {
+  transition: all 0.1s ease;
+}
+.bg-contain .contain-lyric .share .share-content .content .bottom-content .like-chat .slide-fade-leave-active {
+  transition: all 0.1s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.bg-contain .contain-lyric .share .share-content .content .bottom-content .like-chat .slide-fade-enter,
+.bg-contain .contain-lyric .share .share-content .content .bottom-content .like-chat .slide-fade-leave-to {
+  transform: translateX(10px);
+  opacity: 0;
+}
+.bg-contain .contain-lyric .share .center {
+  text-align: center;
+  font-size: 15px;
+}
+.bg-contain .contain-lyric .commentButton {
+  position: fixed;
+  right: 266px;
+  bottom: 62px;
+}

@@ -1,0 +1,280 @@
+.singerMsg {
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+    background-color: #f5f5f5;
+
+    .singer_info {
+        width: 1320px;
+        margin: 0px auto;
+        padding: 35px 0px;
+
+        .singer_img {
+            width: 230px;
+            height: 230px;
+            overflow: hidden;
+            border-radius: 50%;
+            margin-right: 62px;
+            display: inline-block;
+
+            img {
+                width: 230px;
+                height: 230px;
+                border-radius: 50%;
+            }
+        }
+
+        .singer_detail_msg {
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 24px;
+
+            .singer_name {
+                height: 42px;
+                line-height: 42px;
+                font-weight: 500;
+                font-size: 30px;
+            }
+
+            .singer_song_num {
+                color: #333;
+                font-size: 18px;
+                font-weight: 300;
+                line-height: 25px;
+                margin: 16px 0;
+
+                .num {
+                    margin-left: -8px;
+                }
+
+                & :nth-child(2) {
+                    margin-left: 22px;
+                }
+            }
+
+            .singer_contro {
+                color: #666;
+                font-size: 18px;
+                font-weight: 300;
+                line-height: 25px;
+
+                .area {
+                    margin-left: -8px;
+                }
+            }
+
+            .btns {
+                margin: 30px 0px;
+
+                .playAll {
+                    width: 150px;
+                    height: 40px;
+                    background: #ffe12c;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0 28px;
+                    text-align: center;
+                    border-radius: 22px;
+                    border: none;
+                    font-size: 16px;
+                    color: #333;
+                    cursor: pointer;
+
+                    i {
+                        margin-right: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.main_con {
+    width: 1320px;
+    margin: 0px auto;
+    margin-top: 60px;
+    margin-bottom: 80px;
+
+    .con_tags {
+        >span {
+            position: relative;
+            display: inline-block;
+            font-size: 22px;
+            line-height: 34px;
+            margin-right: 46px;
+            font-weight: 300;
+            color: #333;
+            cursor: pointer;
+
+            &::after {
+                position: absolute;
+                content: "";
+                left: 0;
+                bottom: 1px;
+                width: 0px;
+                height: 3px;
+                background: #ffe443;
+                transition: 0.2s all linear;
+            }
+
+            &.active::after {
+                width: 100%;
+                left: 0;
+            }
+        }
+    }
+
+    .con_body {
+        margin-top: 30px;
+
+        .con_song {
+            .list-head {
+                height: 46px;
+                width: 75%;
+                line-height: 46px;
+                background: #fafafa;
+                color: #999;
+
+                .flex_c {
+                    display: flex;
+                    align-items: center;
+                    font-size: 14px;
+
+                    .head_num {
+                        width: 9.18%;
+                        text-align: center;
+                    }
+
+                    .head_name {
+                        width: 50%;
+                    }
+
+                    .head_artist {
+                        width: 30%;
+                    }
+                }
+            }
+
+            .album_list {
+                .song_item {
+                    width: 75%;
+                    display: flex;
+                    align-items: center;
+                    height: 70px;
+                    line-height: 22px;
+                    color: #666;
+                    font-size: 14px;
+
+                    &:nth-of-type(even) {
+                        background: #fafafa;
+                    }
+
+                    &:hover {
+                        background: #f2f2f2;
+
+                        .operate {
+                            display: block;
+                        }
+                    }
+
+                    .serial_number {
+                        width: 9.18%;
+                        text-align: center;
+                        font-weight: 700;
+                        overflow: hidden; //超出的隐藏
+                        text-overflow: ellipsis; //显示省略符号来代表被修剪的文本。
+                        white-space: nowrap;
+                    }
+
+                    .song_title {
+                        width: 50%;
+                        overflow: hidden; //超出的隐藏
+                        text-overflow: ellipsis; //显示省略符号来代表被修剪的文本。
+                        white-space: nowrap;
+                    }
+
+                    .singer {
+                        width: 30%;
+                        overflow: hidden; //超出的隐藏
+                        text-overflow: ellipsis; //显示省略符号来代表被修剪的文本。
+                        white-space: nowrap;
+                    }
+
+                    .operate {
+                        width: auto;
+                        flex: 1;
+                        display: none;
+
+                        .playIcon {
+                            margin-right: 27px;
+                            font-size: 25px;
+                            vertical-align: middle;
+                            cursor: pointer;
+                        }
+
+                        .downLoadIcon {
+                            font-size: 22px;
+                            vertical-align: middle;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .active {
+                    background: #dedbdb !important;
+                }
+            }
+
+            .sld_page {
+                margin-top: 20px;
+                margin-left: -9px;
+            }
+
+            .no-music {
+                line-height: 200px;
+                text-align: center;
+                font-size: 30px;
+                color: #999999;
+            }
+        }
+
+        .con_album {
+            .song_List {
+                margin-top: 25px;
+
+                >ul {
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    li {
+                        position: relative;
+                        width: 240px;
+                        margin-bottom: 50px;
+                        margin-right: 22px;
+                    }
+                }
+
+                .page {
+                    text-align: center;
+                }
+
+                .no-data {
+                    line-height: 200px;
+                    text-align: center;
+                    font-size: 30px;
+                    color: #999999;
+                }
+            }
+        }
+
+        .con_introduction {
+            width: 460px;
+            font-weight: 300;
+            font-size: 14px;
+            color: #666;
+            line-height: 21px;
+            text-indent: 2em;
+            word-break: break-all;
+        }
+    }
+}

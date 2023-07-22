@@ -1,0 +1,116 @@
+.main-songList-content {
+    width: 1320px;
+    margin: 30px auto;
+    margin-bottom: 90px;
+    position: relative;
+
+    .tit_content {
+        height: 30px;
+
+        .tit {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 30px;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+
+        .icon-bar_icon_arrow {
+            font-size: 18px;
+            cursor: pointer;
+        }
+    }
+
+    .tags {
+        position: absolute;
+        left: 0;
+        top: 40px;
+        width: 600px;
+        max-height: 646px;
+        box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        padding: 30px;
+        z-index: 10;
+        background: #fff;
+
+        .default {
+            .default-tags {
+                font-size: 16px;
+            }
+
+            span {
+                margin-left: 5px;
+                font-size: 16px;
+                font-weight: 600;
+            }
+        }
+
+        .list_tags {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 10px;
+            margin-bottom: 15px;
+
+            .active {
+                background: #ffe12c !important;
+            }
+
+            .item {
+                padding: 6px 18px;
+                background: #f7f7f7;
+                border-radius: 16px;
+                margin: 0 10px 10px 0;
+                cursor: pointer;
+
+                span {
+                    line-height: 20px;
+                    font-weight: 300;
+                    font-size: 14px;
+                    color: #000;
+                }
+            }
+        }
+
+        .myTopic {
+            .myTopic-tags {
+                font-size: 14px;
+                margin-left: 3px;
+            }
+
+            span {
+                margin-left: 5px;
+                font-size: 16px;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .song_List {
+        margin-top: 25px;
+
+        >ul {
+            display: flex;
+            flex-wrap: wrap;
+
+            li {
+                position: relative;
+                width: 240px;
+                margin-bottom: 50px;
+                margin-right: 22px;
+            }
+        }
+    }
+
+    .page {
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    .no-data {
+        line-height: 400px;
+        text-align: center;
+        font-size: 30px;
+        color: #999999;
+    }
+}

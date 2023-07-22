@@ -1,0 +1,50 @@
+.showList {
+  width: 900px;
+  margin: 10px auto;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  padding: 20px 20px;
+  border-radius: 10px;
+}
+.showList .title ul {
+  display: flex;
+}
+.showList .title ul li {
+  flex: 3;
+  font-size: 15px;
+  text-align: center;
+  border-bottom: 1px solid #409EFF;
+  padding: 10px 12px;
+}
+.showList .title ul li:nth-of-type(1) {
+  flex: 1;
+}
+.showList .song_body ul li {
+  display: flex;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #e4e4e4;
+}
+.showList .song_body ul li:hover div {
+  color: #409EFF;
+}
+.showList .song_body ul li div {
+  flex: 3;
+  font-size: 13px;
+  text-align: center;
+  color: #605c5a;
+  padding: 10px 12px;
+}
+.showList .song_body ul li div:nth-of-type(1) {
+  flex: 1;
+}
+.showList .song_body ul .clearli {
+  border-bottom: none !important;
+}
+.showList .song_body ul .clearli .bli {
+  font-size: 20px;
+}
+.page {
+  margin-top: 15px;
+  margin-left: 178px;
+  margin-bottom: 60px;
+}

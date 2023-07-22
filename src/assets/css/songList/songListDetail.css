@@ -1,0 +1,159 @@
+.songListDetail-contain {
+  width: 1320px;
+  margin: 30px auto;
+  margin-bottom: 90px;
+  margin-top: 55px;
+  position: relative;
+}
+.songListDetail-contain .left-introduction {
+  margin-right: 96px;
+  width: 296px;
+  display: inline-block;
+}
+.songListDetail-contain .left-introduction .img_out {
+  position: relative;
+  margin-bottom: 30px;
+  font-size: 0;
+}
+.songListDetail-contain .left-introduction .img_out img {
+  width: 100%;
+  height: 305px;
+}
+.songListDetail-contain .left-introduction .intr {
+  font-size: 22px;
+  font-weight: 600;
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.songListDetail-contain .left-introduction .intr-text {
+  width: 100%;
+  font-size: 14px;
+  color: #666;
+  line-height: 21px;
+  word-break: break-all;
+}
+.songListDetail-contain .right-list {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 6px;
+  width: 928px;
+}
+.songListDetail-contain .right-list .song-list-name {
+  word-break: break-all;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 42px;
+}
+.songListDetail-contain .right-list .song-list-tag {
+  line-height: 20px;
+  margin-top: 12px;
+  color: #296294;
+  font-size: 16px;
+}
+.songListDetail-contain .right-list .btns {
+  margin: 30px 0px;
+}
+.songListDetail-contain .right-list .btns .playAll {
+  width: 150px;
+  height: 40px;
+  background: #ffe12c;
+  align-items: center;
+  justify-content: center;
+  padding: 0 28px;
+  text-align: center;
+  border-radius: 22px;
+  border: none;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+}
+.songListDetail-contain .right-list .btns .playAll i {
+  margin-right: 8px;
+}
+.songListDetail-contain .right-list .song-list .list-head {
+  height: 46px;
+  line-height: 46px;
+  background: #fafafa;
+  color: #999;
+}
+.songListDetail-contain .right-list .song-list .list-head .flex_c {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+.songListDetail-contain .right-list .song-list .list-head .flex_c .head_num {
+  width: 9.18%;
+  text-align: center;
+}
+.songListDetail-contain .right-list .song-list .list-head .flex_c .head_name {
+  width: 50%;
+}
+.songListDetail-contain .right-list .song-list .list-head .flex_c .head_artist {
+  width: 30%;
+}
+.songListDetail-contain .right-list .song-list .album_list .song_item {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  line-height: 22px;
+  color: #666;
+  font-size: 14px;
+}
+.songListDetail-contain .right-list .song-list .album_list .song_item:nth-of-type(even) {
+  background: #fafafa;
+}
+.songListDetail-contain .right-list .song-list .album_list .song_item:hover {
+  background: #f2f2f2;
+}
+.songListDetail-contain .right-list .song-list .album_list .song_item:hover .operate {
+  display: block;
+}
+.songListDetail-contain .right-list .song-list .album_list .song_item .serial_number {
+  width: 9.18%;
+  text-align: center;
+  font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.songListDetail-contain .right-list .song-list .album_list .song_item .song_title {
+  width: 50%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.songListDetail-contain .right-list .song-list .album_list .song_item .singer {
+  width: 30%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.songListDetail-contain .right-list .song-list .album_list .song_item .operate {
+  width: auto;
+  flex: 1;
+  display: none;
+}
+.songListDetail-contain .right-list .song-list .album_list .song_item .operate .playIcon {
+  margin-right: 27px;
+  font-size: 25px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.songListDetail-contain .right-list .song-list .album_list .song_item .operate .downLoadIcon {
+  font-size: 22px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.songListDetail-contain .right-list .song-list .album_list .active {
+  background: #dedbdb !important;
+}
+.songListDetail-contain .right-list .sld_page {
+  text-align: center;
+  margin-top: 20px;
+}
+.songListDetail-contain .right-list .no-music {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 30px;
+}

@@ -1,0 +1,219 @@
+.MyHeader {
+    position: relative;
+    height: 60px;
+    background: rgb(254, 254, 254);
+    box-shadow: 0px -13px 8px 10px;
+    margin-bottom: 15px;
+    border-radius: 0px 0px 8px 8px;
+
+    .header-left {
+        display: inline-block;
+        height: 55px;
+        line-height: 55px;
+
+        span {
+            display: inline-block;
+            font-family: 'icomoon';
+            font-size: 24px;
+        }
+
+        ul {
+            display: inline-block;
+        }
+
+        li {
+            display: inline-block;
+            padding: 0px 18px;
+            font-size: 17px;
+
+            a {
+                display: inline-block;
+                color: rgb(43, 43, 42);
+
+                &:hover {
+                    color: royalblue;
+                }
+            }
+        }
+    }
+
+    .header-search {
+        display: inline-block;
+        width: 400px;
+
+        .el-input {
+            display: inline-block;
+            width: 230px;
+            margin-right: 10px;
+        }
+    }
+
+    .author-right {
+        display: inline-block;
+        position: absolute;
+        right: 101px;
+        height: 60px;
+        line-height: 55px;
+        cursor: pointer;
+
+        .authorMsg {
+            display: inline-block;
+
+            img {
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+            }
+        }
+
+        .nickname {
+            display: inline-block;
+            font-size: 16px;
+            margin-left: 10px;
+            color: #747571;
+        }
+    }
+}
+
+.el-drawer__header {
+    >span {
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+.dropdown-icon {
+    font-family: 'icomoon';
+}
+
+.message-content {
+    padding: 20px 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #e2e2e2;
+
+    &:hover {
+        background-color: #f4f7fa;
+    }
+
+    .author-img {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background-color: pink;
+        border-radius: 50%;
+        overflow: hidden;
+
+        img {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    .content {
+        display: inline-block;
+        position: relative;
+        vertical-align: top;
+        margin-left: 10px;
+        width: 308px;
+
+        .top-content {
+            margin-bottom: 6px;
+
+            .name {
+                color: #E6A23C;
+            }
+
+            .date-time {
+                position: absolute;
+                right: 0px;
+            }
+        }
+
+        .bottom-content {
+            overflow: hidden; //超出隐藏
+            text-overflow: ellipsis; //显示省略号
+            white-space: nowrap; //强制不换行
+        }
+    }
+}
+
+.inDrawer {
+    width: 430px;
+
+    .title {
+        text-align: center;
+        line-height: 50px;
+
+        .title-color {
+            color: #E6A23C;
+        }
+    }
+
+    .scrollBox {
+        height: 510px;
+        border-top: 1px solid #ccc;
+        padding: 10px 16px;
+
+        .content {
+            height: 460px;
+
+            .right {
+                text-align: right;
+            }
+
+            .left {
+                text-align: left;
+            }
+
+            .tip-body {
+                padding: 5px 12px;
+                word-break: break-all;
+
+                .tip {
+                    padding: 10px;
+                    color: white;
+                    border-radius: 20px;
+                    font-family: sans-serif;
+                    text-align: left;
+                    display: inline-block;
+                }
+
+                .right-color {
+                    background-color: deepskyblue;
+                    border-bottom-right-radius: 0px;
+                }
+
+                .left-color {
+                    background-color: forestgreen;
+                    border-bottom-left-radius: 0px;
+                }
+            }
+        }
+    }
+
+    .writeContent {
+        .box-text {
+            text-align: center;
+
+            .write {
+                width: 355px;
+                height: 110px;
+                padding: 20px;
+                border: none;
+                outline: none;
+                resize: none;
+                border-radius: 2px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
+                overflow-y: hidden;
+                word-break: break-all;
+            }
+        }
+
+        .sendModel {
+            text-align: right;
+            margin-right: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+}

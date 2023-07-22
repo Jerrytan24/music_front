@@ -1,0 +1,43 @@
+.content_lyric {
+  margin-bottom: 20px;
+}
+.content_lyric .song_info {
+  display: inline-block;
+  width: 200px;
+}
+.content_lyric .song_info .song_info_pic {
+  display: inline-block;
+  background: url("../../img/lyric/album_cover_player.png") no-repeat 0 0;
+  width: 201px;
+  height: 180px;
+}
+.content_lyric .song_info .song_info_pic img {
+  width: 180px;
+  height: 180px;
+  border-radius: 10px;
+}
+.content_lyric .song_info > div {
+  font-size: 14px;
+  margin-top: 10px;
+}
+.content_lyric .song_info > div a {
+  color: #409EFF;
+}
+.content_lyric .song_lyric_container {
+  display: inline-block;
+  vertical-align: top;
+  width: 518px;
+  text-align: center;
+  height: 300px;
+  padding-bottom: 12px;
+}
+.content_lyric .song_lyric_container .has-lyric li {
+  line-height: 30px;
+  font-size: 14px;
+  color: #2f2f2f;
+}
+.content_lyric .song_lyric_container .no-lyric {
+  line-height: 280px;
+  font-size: 14px;
+  color: #2f2f2f;
+}

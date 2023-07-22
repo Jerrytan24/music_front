@@ -1,0 +1,70 @@
+.hot-songList,.hot-singerList,.top-list {
+    padding-bottom: 30px;
+    border-radius: 2px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
+    >h1{
+        text-align: center;
+        margin-bottom: 20px;
+        border-bottom: 1px solid rgb(140 196 253);
+    }
+    .title {
+        color: rgb(91,92,90);
+    }
+    .songList,.singerList{
+        >ul {
+            display:flex;
+            flex-wrap: wrap;
+            li {
+                position: relative;
+                width:240px;
+                margin-bottom: 20px;
+                margin-left: 20px;
+                .hot {
+                    position: absolute;
+                    right: -4px;
+                    z-index: 1;
+                }
+            }
+        }
+    }
+    .top {
+        display: flex;
+        justify-content:space-around;
+        padding-left: 24px;
+        li {
+            display: inline-block;
+            width: 100%;
+            color: #5b5c5a;
+            font-size:18px;
+            margin-bottom: 20px;
+            cursor: pointer;
+            &:hover {
+                color: rgb(140 196 253);
+            }
+        }
+        span {
+            margin-right: 6px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .recommend-list {
+            flex: 1;
+            padding-right: 8px;
+        }
+        .new-list {
+            flex: 1;
+            padding-right: 8px;
+        }
+        .hot-list {
+            flex: 1;
+            padding-right: 8px;
+        }
+    }
+}
+.self-top {
+    margin-bottom: 82px;
+}
