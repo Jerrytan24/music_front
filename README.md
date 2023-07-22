@@ -1,3 +1,5 @@
+#前言：该项目是完整的一个毕业设计，需要后端代码+毕业论文+答辩ppt等材料可添加QQ:1531981017
+
 # music-view
 图片展示：
 ![微信图片_20230722130806_1 - 副本](https://github.com/Jerrytan24/music_front/assets/58656693/0da0f58e-2565-4c36-970b-6e5e25bc238f)
